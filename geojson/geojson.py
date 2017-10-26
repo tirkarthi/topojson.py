@@ -23,7 +23,7 @@ class Transformer:
             out_arc.append(self.convert_point(previous))
         return out_arc
     def reversed_arc(self,arc):
-        return list(map(None,reversed(self.arcs[~arc])))
+        return list(reversed(self.arcs[~arc]))
     def stitch_arcs(self,arcs):
         line_string = []
         for arc in arcs:
